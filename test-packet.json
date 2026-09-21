@@ -1,0 +1,1666 @@
+{
+  "sbom_type": "aibom",
+  "sbom_name": "github-devops-scan-TEST0001",
+  "organization": "semp_test",
+  "asset": "github",
+  "account_name": "demo-latest",
+  "type": "devops",
+  "data_source": "cloud",
+  "description": "AIBOM report generated from github devops scan.",
+  "file": {
+    "account_name": "demo-latest",
+    "scan_time": 1790007796,
+    "reports": [
+      {
+        "repo": "prog_testing",
+        "report": {
+          "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+          "bomFormat": "CycloneDX",
+          "specVersion": "1.6",
+          "serialNumber": "urn:uuid:16b57bce-f13c-4d21-a862-2b12f89e0122",
+          "version": 1,
+          "metadata": {
+            "timestamp": "2026-09-21T16:23:16+00:00",
+            "tools": [
+              {
+                "type": "application",
+                "author": "anchore",
+                "name": "syft",
+                "version": "1.18.1"
+              },
+              {
+                "type": "application",
+                "author": "anchore",
+                "name": "grype",
+                "version": "0.85.0"
+              },
+              {
+                "type": "application",
+                "author": "cytex",
+                "name": "aibom-scanner",
+                "version": "1.4.0"
+              }
+            ],
+            "component": {
+              "type": "application",
+              "name": "bilalbroadstone/prog_testing",
+              "bom-ref": "bilalbroadstone/prog_testing"
+            }
+          },
+          "components": [
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/pyyaml@7.7.2?package-id=ae86212d1066396e",
+              "name": "pyyaml",
+              "purl": "pkg:pypi/pyyaml@7.7.2",
+              "type": "library",
+              "version": "7.7.2",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:pyyaml:pyyaml:7.7.2:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/numpy@9.10.0?package-id=ad7196551fe0fb88",
+              "name": "numpy",
+              "purl": "pkg:pypi/numpy@9.10.0",
+              "type": "library",
+              "version": "9.10.0",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:numpy:numpy:9.10.0:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/handlebars@1.4.0?package-id=5a26e814db1d941e",
+              "name": "handlebars",
+              "purl": "pkg:npm/handlebars@1.4.0",
+              "type": "library",
+              "version": "1.4.0",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:handlebars:handlebars:1.4.0:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/aiohttp@5.12.1?package-id=6b8664fcd857ac6d",
+              "name": "aiohttp",
+              "purl": "pkg:pypi/aiohttp@5.12.1",
+              "type": "library",
+              "version": "5.12.1",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:aiohttp:aiohttp:5.12.1:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/urllib3@2.15.9?package-id=a106d9acb79ecc48",
+              "name": "urllib3",
+              "purl": "pkg:pypi/urllib3@2.15.9",
+              "type": "library",
+              "version": "2.15.9",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:urllib3:urllib3:2.15.9:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/node-fetch@3.12.1?package-id=e0a28fc41c6e3791",
+              "name": "node-fetch",
+              "purl": "pkg:npm/node-fetch@3.12.1",
+              "type": "library",
+              "version": "3.12.1",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:node-fetch:node-fetch:3.12.1:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/jinja2@7.6.5?package-id=a8341f9044e2fe05",
+              "name": "jinja2",
+              "purl": "pkg:pypi/jinja2@7.6.5",
+              "type": "library",
+              "version": "7.6.5",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:jinja2:jinja2:7.6.5:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/werkzeug@3.5.3?package-id=71eec9a0db352096",
+              "name": "werkzeug",
+              "purl": "pkg:pypi/werkzeug@3.5.3",
+              "type": "library",
+              "version": "3.5.3",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:werkzeug:werkzeug:3.5.3:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/moment@2.6.1?package-id=25c71d7daef62224",
+              "name": "moment",
+              "purl": "pkg:npm/moment@2.6.1",
+              "type": "library",
+              "version": "2.6.1",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:moment:moment:2.6.1:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/pandas@5.8.9?package-id=c00713c8940d9fb1",
+              "name": "pandas",
+              "purl": "pkg:pypi/pandas@5.8.9",
+              "type": "library",
+              "version": "5.8.9",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:pandas:pandas:5.8.9:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/setuptools@5.0.9?package-id=121bddcf50f562d6",
+              "name": "setuptools",
+              "purl": "pkg:pypi/setuptools@5.0.9",
+              "type": "library",
+              "version": "5.0.9",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:setuptools:setuptools:5.0.9:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/certifi@1.17.8?package-id=5d7275d0d93a91fb",
+              "name": "certifi",
+              "purl": "pkg:pypi/certifi@1.17.8",
+              "type": "library",
+              "version": "1.17.8",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:certifi:certifi:1.17.8:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/axios@5.0.5?package-id=a6301cc1c01de2ae",
+              "name": "axios",
+              "purl": "pkg:npm/axios@5.0.5",
+              "type": "library",
+              "version": "5.0.5",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:axios:axios:5.0.5:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/lxml@8.16.3?package-id=2ebb14437d5468cf",
+              "name": "lxml",
+              "purl": "pkg:pypi/lxml@8.16.3",
+              "type": "library",
+              "version": "8.16.3",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:lxml:lxml:8.16.3:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/requests@5.2.5?package-id=65f828f843645410",
+              "name": "requests",
+              "purl": "pkg:pypi/requests@5.2.5",
+              "type": "library",
+              "version": "5.2.5",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:requests:requests:5.2.5:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/tar@0.7.5?package-id=3962dcc265b61739",
+              "name": "tar",
+              "purl": "pkg:npm/tar@0.7.5",
+              "type": "library",
+              "version": "0.7.5",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:tar:tar:0.7.5:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/pillow@8.10.4?package-id=a918daa2881a14df",
+              "name": "pillow",
+              "purl": "pkg:pypi/pillow@8.10.4",
+              "type": "library",
+              "version": "8.10.4",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:pillow:pillow:8.10.4:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/lodash@7.20.9?package-id=a5c0e26c96fde4cc",
+              "name": "lodash",
+              "purl": "pkg:npm/lodash@7.20.9",
+              "type": "library",
+              "version": "7.20.9",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:lodash:lodash:7.20.9:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/flask@6.5.1?package-id=8a48883354bd434c",
+              "name": "flask",
+              "purl": "pkg:pypi/flask@6.5.1",
+              "type": "library",
+              "version": "6.5.1",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:flask:flask:6.5.1:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/webpack@5.13.8?package-id=092cce0317472011",
+              "name": "webpack",
+              "purl": "pkg:npm/webpack@5.13.8",
+              "type": "library",
+              "version": "5.13.8",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:webpack:webpack:5.13.8:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/boto3@9.16.9?package-id=0a4a799a9ca51c3d",
+              "name": "boto3",
+              "purl": "pkg:pypi/boto3@9.16.9",
+              "type": "library",
+              "version": "9.16.9",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:boto3:boto3:9.16.9:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/django@6.12.3?package-id=e2705c8a8e5208ae",
+              "name": "django",
+              "purl": "pkg:pypi/django@6.12.3",
+              "type": "library",
+              "version": "6.12.3",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:django:django:6.12.3:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:pypi/cryptography@0.20.4?package-id=7fc3b1078e9e50ae",
+              "name": "cryptography",
+              "purl": "pkg:pypi/cryptography@0.20.4",
+              "type": "library",
+              "version": "0.20.4",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "python-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "python"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "pypi"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:cryptography:cryptography:0.20.4:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/minimist@6.19.8?package-id=17f5f895f9cedd14",
+              "name": "minimist",
+              "purl": "pkg:npm/minimist@6.19.8",
+              "type": "library",
+              "version": "6.19.8",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:minimist:minimist:6.19.8:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "sbom",
+              "bom-ref": "pkg:npm/semver@5.3.9?package-id=ca377b85e7a3f921",
+              "name": "semver",
+              "purl": "pkg:npm/semver@5.3.9",
+              "type": "library",
+              "version": "5.3.9",
+              "properties": [
+                {
+                  "name": "syft:package:foundBy",
+                  "value": "javascript-installed-package-cataloger"
+                },
+                {
+                  "name": "syft:package:language",
+                  "value": "javascript"
+                },
+                {
+                  "name": "syft:package:type",
+                  "value": "npm"
+                },
+                {
+                  "name": "syft:cpe23",
+                  "value": "cpe:2.3:a:semver:semver:5.3.9:*:*:*:*:*:*:*"
+                }
+              ]
+            },
+            {
+              "_source": "aibom",
+              "bom-ref": "aibom:model:gpt-4o",
+              "name": "gpt-4o",
+              "type": "application",
+              "description": "OpenAI GPT-4o inference endpoint",
+              "properties": [
+                {
+                  "name": "cisco-aibom:type",
+                  "value": "model"
+                },
+                {
+                  "name": "cisco-aibom:discovered-by",
+                  "value": "static-analysis"
+                }
+              ]
+            },
+            {
+              "_source": "aibom",
+              "bom-ref": "aibom:model:claude-3-5-sonnet",
+              "name": "claude-3-5-sonnet",
+              "type": "application",
+              "description": "Anthropic Claude 3.5 Sonnet endpoint",
+              "properties": [
+                {
+                  "name": "cisco-aibom:type",
+                  "value": "model"
+                },
+                {
+                  "name": "cisco-aibom:discovered-by",
+                  "value": "static-analysis"
+                }
+              ]
+            },
+            {
+              "_source": "aibom",
+              "bom-ref": "aibom:model:text-embedding-3-large",
+              "name": "text-embedding-3-large",
+              "type": "application",
+              "description": "OpenAI embedding model",
+              "properties": [
+                {
+                  "name": "cisco-aibom:type",
+                  "value": "model"
+                },
+                {
+                  "name": "cisco-aibom:discovered-by",
+                  "value": "static-analysis"
+                }
+              ]
+            },
+            {
+              "_source": "aibom",
+              "bom-ref": "aibom:agent:langchain-agent-runner",
+              "name": "langchain-agent-runner",
+              "type": "application",
+              "description": "LangChain tool-calling agent",
+              "properties": [
+                {
+                  "name": "cisco-aibom:type",
+                  "value": "agent"
+                },
+                {
+                  "name": "cisco-aibom:discovered-by",
+                  "value": "static-analysis"
+                }
+              ]
+            },
+            {
+              "_source": "aibom",
+              "bom-ref": "aibom:agent:support-triage-agent",
+              "name": "support-triage-agent",
+              "type": "application",
+              "description": "Internal ticket triage agent",
+              "properties": [
+                {
+                  "name": "cisco-aibom:type",
+                  "value": "agent"
+                },
+                {
+                  "name": "cisco-aibom:discovered-by",
+                  "value": "static-analysis"
+                }
+              ]
+            },
+            {
+              "_source": "aibom",
+              "bom-ref": "aibom:mcp_server:filesystem-mcp",
+              "name": "filesystem-mcp",
+              "type": "application",
+              "description": "Filesystem MCP server",
+              "properties": [
+                {
+                  "name": "cisco-aibom:type",
+                  "value": "mcp_server"
+                },
+                {
+                  "name": "cisco-aibom:discovered-by",
+                  "value": "static-analysis"
+                }
+              ]
+            },
+            {
+              "_source": "aibom",
+              "bom-ref": "aibom:mcp_server:github-mcp",
+              "name": "github-mcp",
+              "type": "application",
+              "description": "GitHub MCP server",
+              "properties": [
+                {
+                  "name": "cisco-aibom:type",
+                  "value": "mcp_server"
+                },
+                {
+                  "name": "cisco-aibom:discovered-by",
+                  "value": "static-analysis"
+                }
+              ]
+            },
+            {
+              "_source": "aibom",
+              "bom-ref": "aibom:mcp_client:ide-mcp-client",
+              "name": "ide-mcp-client",
+              "type": "application",
+              "description": "IDE-side MCP client",
+              "properties": [
+                {
+                  "name": "cisco-aibom:type",
+                  "value": "mcp_client"
+                },
+                {
+                  "name": "cisco-aibom:discovered-by",
+                  "value": "static-analysis"
+                }
+              ]
+            }
+          ],
+          "dependencies": [
+            {
+              "ref": "bilalbroadstone/prog_testing",
+              "dependsOn": [
+                "pkg:pypi/pyyaml@7.7.2?package-id=ae86212d1066396e",
+                "pkg:pypi/numpy@9.10.0?package-id=ad7196551fe0fb88",
+                "pkg:npm/handlebars@1.4.0?package-id=5a26e814db1d941e",
+                "pkg:pypi/aiohttp@5.12.1?package-id=6b8664fcd857ac6d",
+                "pkg:pypi/urllib3@2.15.9?package-id=a106d9acb79ecc48",
+                "pkg:npm/node-fetch@3.12.1?package-id=e0a28fc41c6e3791",
+                "pkg:pypi/jinja2@7.6.5?package-id=a8341f9044e2fe05",
+                "pkg:pypi/werkzeug@3.5.3?package-id=71eec9a0db352096",
+                "pkg:npm/moment@2.6.1?package-id=25c71d7daef62224",
+                "pkg:pypi/pandas@5.8.9?package-id=c00713c8940d9fb1",
+                "pkg:pypi/setuptools@5.0.9?package-id=121bddcf50f562d6",
+                "pkg:pypi/certifi@1.17.8?package-id=5d7275d0d93a91fb",
+                "pkg:npm/axios@5.0.5?package-id=a6301cc1c01de2ae",
+                "pkg:pypi/lxml@8.16.3?package-id=2ebb14437d5468cf",
+                "pkg:pypi/requests@5.2.5?package-id=65f828f843645410",
+                "pkg:npm/tar@0.7.5?package-id=3962dcc265b61739",
+                "pkg:pypi/pillow@8.10.4?package-id=a918daa2881a14df",
+                "pkg:npm/lodash@7.20.9?package-id=a5c0e26c96fde4cc",
+                "pkg:pypi/flask@6.5.1?package-id=8a48883354bd434c",
+                "pkg:npm/webpack@5.13.8?package-id=092cce0317472011",
+                "pkg:pypi/boto3@9.16.9?package-id=0a4a799a9ca51c3d",
+                "pkg:pypi/django@6.12.3?package-id=e2705c8a8e5208ae",
+                "pkg:pypi/cryptography@0.20.4?package-id=7fc3b1078e9e50ae",
+                "pkg:npm/minimist@6.19.8?package-id=17f5f895f9cedd14",
+                "pkg:npm/semver@5.3.9?package-id=ca377b85e7a3f921",
+                "aibom:model:gpt-4o",
+                "aibom:model:claude-3-5-sonnet",
+                "aibom:model:text-embedding-3-large",
+                "aibom:agent:langchain-agent-runner",
+                "aibom:agent:support-triage-agent",
+                "aibom:mcp_server:filesystem-mcp",
+                "aibom:mcp_server:github-mcp",
+                "aibom:mcp_client:ide-mcp-client"
+              ]
+            }
+          ],
+          "vulnerabilities": [
+            {
+              "_source": "grype",
+              "id": "CVE-2022-26225",
+              "bom-ref": "urn:uuid:95731852-6f9b-44c9-8983-9b5b8176772a",
+              "affects": [
+                {
+                  "ref": "pkg:npm/lodash@7.20.9?package-id=a5c0e26c96fde4cc"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 9.9,
+                  "severity": "critical",
+                  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+              ],
+              "description": "A deserialization flaw permits arbitrary code execution when loading untrusted data.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2022-26225"
+              },
+              "references": [
+                {
+                  "id": "CVE-2022-26225",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-26225"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2022-26225"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "GHSA-cbio-aw95-7dme",
+              "bom-ref": "urn:uuid:d51033d9-5337-4a1b-8445-4043f9fd97a7",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/aiohttp@5.12.1?package-id=6b8664fcd857ac6d"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 8.7,
+                  "severity": "high",
+                  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+                }
+              ],
+              "description": "Unbounded memory allocation when parsing untrusted input leads to resource exhaustion.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/GHSA-cbio-aw95-7dme"
+              },
+              "references": [
+                {
+                  "id": "GHSA-cbio-aw95-7dme",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/GHSA-cbio-aw95-7dme"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/GHSA-cbio-aw95-7dme"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "GHSA-ru83-qg2s-hccm",
+              "bom-ref": "urn:uuid:47d80743-b49c-412b-81c6-802ffebe4d72",
+              "affects": [
+                {
+                  "ref": "pkg:npm/lodash@7.20.9?package-id=a5c0e26c96fde4cc"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 5.6,
+                  "severity": "medium",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Improper input validation allows a remote attacker to cause a denial of service.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/GHSA-ru83-qg2s-hccm"
+              },
+              "references": [
+                {
+                  "id": "GHSA-ru83-qg2s-hccm",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/GHSA-ru83-qg2s-hccm"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/GHSA-ru83-qg2s-hccm"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2022-13680",
+              "bom-ref": "urn:uuid:b8a1f86c-5cda-438a-a3f8-a86a8793b3dd",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/django@6.12.3?package-id=e2705c8a8e5208ae"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 0.6,
+                  "severity": "low",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Improper input validation allows a remote attacker to cause a denial of service.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2022-13680"
+              },
+              "references": [
+                {
+                  "id": "CVE-2022-13680",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-13680"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2022-13680"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "GHSA-0q1b-1mr5-tqyh",
+              "bom-ref": "urn:uuid:fd601ebb-de4b-4149-8ec9-1dad9ef1a312",
+              "affects": [
+                {
+                  "ref": "pkg:npm/node-fetch@3.12.1?package-id=e0a28fc41c6e3791"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 9.6,
+                  "severity": "critical",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "A crafted request can bypass the authentication check in the request handler.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/GHSA-0q1b-1mr5-tqyh"
+              },
+              "references": [
+                {
+                  "id": "GHSA-0q1b-1mr5-tqyh",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/GHSA-0q1b-1mr5-tqyh"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/GHSA-0q1b-1mr5-tqyh"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2024-60914",
+              "bom-ref": "urn:uuid:47db9e9f-bef6-4b9a-aebb-c580210dceec",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/setuptools@5.0.9?package-id=121bddcf50f562d6"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 8.0,
+                  "severity": "high",
+                  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+              ],
+              "description": "A deserialization flaw permits arbitrary code execution when loading untrusted data.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2024-60914"
+              },
+              "references": [
+                {
+                  "id": "CVE-2024-60914",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-60914"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2024-60914"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2023-49170",
+              "bom-ref": "urn:uuid:95a44157-a3c8-47e2-8d85-ee87c97b14fb",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/boto3@9.16.9?package-id=0a4a799a9ca51c3d"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 6.7,
+                  "severity": "medium",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Path traversal in the archive extraction routine permits writing outside the target directory.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2023-49170"
+              },
+              "references": [
+                {
+                  "id": "CVE-2023-49170",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49170"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2023-49170"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "GHSA-jttk-ry9l-vpwu",
+              "bom-ref": "urn:uuid:c0a04cf5-03f1-4413-9ba0-d60c88face8c",
+              "affects": [
+                {
+                  "ref": "pkg:npm/semver@5.3.9?package-id=ca377b85e7a3f921"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 0.4,
+                  "severity": "low",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Path traversal in the archive extraction routine permits writing outside the target directory.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/GHSA-jttk-ry9l-vpwu"
+              },
+              "references": [
+                {
+                  "id": "GHSA-jttk-ry9l-vpwu",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/GHSA-jttk-ry9l-vpwu"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/GHSA-jttk-ry9l-vpwu"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "GHSA-v40o-iowq-njt9",
+              "bom-ref": "urn:uuid:67b7aa7f-a9ac-4a36-bafa-56b2dd58aea8",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/werkzeug@3.5.3?package-id=71eec9a0db352096"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 9.9,
+                  "severity": "critical",
+                  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Unbounded memory allocation when parsing untrusted input leads to resource exhaustion.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/GHSA-v40o-iowq-njt9"
+              },
+              "references": [
+                {
+                  "id": "GHSA-v40o-iowq-njt9",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/GHSA-v40o-iowq-njt9"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/GHSA-v40o-iowq-njt9"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2022-68846",
+              "bom-ref": "urn:uuid:e315b024-1eda-4b27-8537-1a0851e3c67d",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/boto3@9.16.9?package-id=0a4a799a9ca51c3d"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 7.6,
+                  "severity": "high",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "A deserialization flaw permits arbitrary code execution when loading untrusted data.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2022-68846"
+              },
+              "references": [
+                {
+                  "id": "CVE-2022-68846",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-68846"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2022-68846"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2025-28432",
+              "bom-ref": "urn:uuid:30ad3282-7fe7-4411-8cb2-13ebf93e9cd1",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/numpy@9.10.0?package-id=ad7196551fe0fb88"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 5.8,
+                  "severity": "medium",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Path traversal in the archive extraction routine permits writing outside the target directory.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2025-28432"
+              },
+              "references": [
+                {
+                  "id": "CVE-2025-28432",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-28432"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2025-28432"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2025-71013",
+              "bom-ref": "urn:uuid:2fd47e9d-deb2-4e2d-bccf-ecc559def3ab",
+              "affects": [
+                {
+                  "ref": "pkg:npm/node-fetch@3.12.1?package-id=e0a28fc41c6e3791"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 1.0,
+                  "severity": "low",
+                  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+              ],
+              "description": "Unbounded memory allocation when parsing untrusted input leads to resource exhaustion.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2025-71013"
+              },
+              "references": [
+                {
+                  "id": "CVE-2025-71013",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71013"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2025-71013"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2025-38817",
+              "bom-ref": "urn:uuid:74e14933-0947-4b96-96e1-bd92658378ef",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/aiohttp@5.12.1?package-id=6b8664fcd857ac6d"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 9.7,
+                  "severity": "critical",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Path traversal in the archive extraction routine permits writing outside the target directory.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2025-38817"
+              },
+              "references": [
+                {
+                  "id": "CVE-2025-38817",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-38817"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2025-38817"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2022-98403",
+              "bom-ref": "urn:uuid:9f5a402b-4d1e-45e1-b940-801e20adb8eb",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/lxml@8.16.3?package-id=2ebb14437d5468cf"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 7.6,
+                  "severity": "high",
+                  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+              ],
+              "description": "Incorrect certificate validation allows man-in-the-middle attackers to spoof endpoints.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2022-98403"
+              },
+              "references": [
+                {
+                  "id": "CVE-2022-98403",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-98403"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2022-98403"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2024-94698",
+              "bom-ref": "urn:uuid:78402700-5882-4a39-a1f1-cd27baa3001d",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/pyyaml@7.7.2?package-id=ae86212d1066396e"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 5.3,
+                  "severity": "medium",
+                  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Path traversal in the archive extraction routine permits writing outside the target directory.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2024-94698"
+              },
+              "references": [
+                {
+                  "id": "CVE-2024-94698",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-94698"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2024-94698"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2025-46122",
+              "bom-ref": "urn:uuid:6ada8bb9-73e4-4cc0-b900-5b800c460dab",
+              "affects": [
+                {
+                  "ref": "pkg:npm/minimist@6.19.8?package-id=17f5f895f9cedd14"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 1.1,
+                  "severity": "low",
+                  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Incorrect certificate validation allows man-in-the-middle attackers to spoof endpoints.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2025-46122"
+              },
+              "references": [
+                {
+                  "id": "CVE-2025-46122",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-46122"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2025-46122"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "GHSA-n4z2-upus-9fu4",
+              "bom-ref": "urn:uuid:d69755f0-cb54-4d0a-9bea-235839f524c7",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/boto3@9.16.9?package-id=0a4a799a9ca51c3d"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 9.1,
+                  "severity": "critical",
+                  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Improper input validation allows a remote attacker to cause a denial of service.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/GHSA-n4z2-upus-9fu4"
+              },
+              "references": [
+                {
+                  "id": "GHSA-n4z2-upus-9fu4",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/GHSA-n4z2-upus-9fu4"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/GHSA-n4z2-upus-9fu4"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2023-68706",
+              "bom-ref": "urn:uuid:82e26291-42f7-406f-a07f-f10d5a0992d3",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/urllib3@2.15.9?package-id=a106d9acb79ecc48"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 7.2,
+                  "severity": "high",
+                  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+              ],
+              "description": "Incorrect certificate validation allows man-in-the-middle attackers to spoof endpoints.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2023-68706"
+              },
+              "references": [
+                {
+                  "id": "CVE-2023-68706",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-68706"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2023-68706"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "GHSA-ao18-tbf5-1pw9",
+              "bom-ref": "urn:uuid:b25eabec-68f1-4bb1-8f48-c049a273fa00",
+              "affects": [
+                {
+                  "ref": "pkg:pypi/urllib3@2.15.9?package-id=a106d9acb79ecc48"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 5.6,
+                  "severity": "medium",
+                  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "A crafted request can bypass the authentication check in the request handler.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/GHSA-ao18-tbf5-1pw9"
+              },
+              "references": [
+                {
+                  "id": "GHSA-ao18-tbf5-1pw9",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/GHSA-ao18-tbf5-1pw9"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/GHSA-ao18-tbf5-1pw9"
+                }
+              ]
+            },
+            {
+              "_source": "grype",
+              "id": "CVE-2022-31565",
+              "bom-ref": "urn:uuid:88734537-1c93-47c4-8a5c-80cf52971429",
+              "affects": [
+                {
+                  "ref": "pkg:npm/lodash@7.20.9?package-id=a5c0e26c96fde4cc"
+                }
+              ],
+              "ratings": [
+                {
+                  "method": "CVSSv31",
+                  "score": 1.3,
+                  "severity": "low",
+                  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "description": "Path traversal in the archive extraction routine permits writing outside the target directory.",
+              "source": {
+                "name": "github",
+                "url": "https://github.com/advisories/CVE-2022-31565"
+              },
+              "references": [
+                {
+                  "id": "CVE-2022-31565",
+                  "source": {
+                    "name": "nvd",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-31565"
+                  }
+                }
+              ],
+              "advisories": [
+                {
+                  "url": "https://github.com/advisories/CVE-2022-31565"
+                }
+              ]
+            }
+          ],
+          "compliance": {
+            "frameworks": [],
+            "controls": []
+          },
+          "semgrep": {
+            "results": [],
+            "severityCounts": {
+              "error": 0,
+              "warning": 0
+            }
+          },
+          "cytexScan": {
+            "repository": "bilalbroadstone/prog_testing",
+            "branch": "main",
+            "commitSha": "45a167d6c3777ab97fa212de203b5eed8006a7a0",
+            "scanType": "devops",
+            "trigger": "manual",
+            "timestampUtc": "2026-09-21T16:23:16+00:00",
+            "summary": {
+              "components": 33,
+              "dependencies": 33,
+              "vulnerabilities": 20,
+              "sastFindings": 0,
+              "severityCounts": {
+                "critical": 5,
+                "high": 5,
+                "medium": 5,
+                "low": 5
+              },
+              "sastSeverityCounts": {
+                "error": 0,
+                "warning": 0
+              }
+            },
+            "toolStatus": {
+              "syft": "ok",
+              "grype": "ok",
+              "aibom": "ok",
+              "semgrep": "ok"
+            }
+          }
+        },
+        "owner": "bilalbroadstone"
+      }
+    ]
+  }
+}
