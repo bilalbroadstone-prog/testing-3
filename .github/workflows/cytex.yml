@@ -237,6 +237,28 @@ jobs:
           MODEL_ORG_SHAPE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.:-]+$")
           MODEL_SIZE = re.compile(r"(?i)\d+(?:\.\d+)?[bm](?:\b|[-_])|-instruct|-chat\b|:latest$|-preview\b")
 
+          # Platform APIs that report the DEVICE's model - the handset, not a language
+          # model. Android's `Build.MODEL` is the common one, and it reads as a model id
+          # to anything going by name: on one tenant it was 1 of 5 "Shadow AI Models",
+          # extracted from a Java string concatenation as `+ Build.MODEL +`.
+          DEVICE_MODEL_APIS = (
+              "build.model", "build.manufacturer", "build.device", "build.product",
+              "build.brand", "build.hardware", "build.board",
+              "uidevice.model", "uidevice.current.model", "devicemodel", "device.model",
+              "platform.machine", "platform.node", "os.uname",
+          )
+          # Characters no model id ever contains. Their presence means the "name" is a
+          # fragment of source code the extractor cut out of an expression, not a value.
+          SOURCE_EXPRESSION_CHARS = re.compile(r"""[+(){}\[\];=$`<>,"']""")
+
+
+          def _device_model_api(name: str) -> bool:
+              """`+ Build.MODEL +`, `Build.MODEL`, `UIDevice.current.model` - the device."""
+              bare = re.sub(r"[^A-Za-z0-9_.]", "", name or "").lower().strip(".")
+              # Dot boundary only: "mydevicemodel" is not "deviceModel", and a model id
+              # that merely ENDS in one of these words must not be thrown away.
+              return any(bare == api or bare.endswith("." + api) for api in DEVICE_MODEL_APIS)
+
           # Env endpoint classification ------------------------------------------------
           AI_ENV_SUBSTRINGS = (
               "openai", "anthropic", "claude", "groq", "nvidia", "gemini", "vertex", "bedrock",
@@ -698,6 +720,9 @@ jobs:
 
           def _judge_model_id(comp: dict, rel: str | None) -> tuple[str, str, str]:
               name = comp.get("name") or ""
+              if SOURCE_EXPRESSION_CHARS.search(name):
+                  return "suppress", "", (f"`{name}` is a fragment of a source expression, not a model id "
+                                          "(a model id has no operators, quotes or brackets)")
               var = None
               m = re.search(r"`([A-Za-z_][A-Za-z0-9_]*)`", comp.get("description") or "")
               if m:
@@ -726,6 +751,11 @@ jobs:
               'suppress' or 'duplicate' (then the 2nd item is the surviving bom-ref).
               """
               name = comp.get("name") or ""
+              # Checked before the class-symbol split, so both forms are caught: the bare
+              # symbol `Build.MODEL` and the expression fragment `+ Build.MODEL +`.
+              if _device_model_api(name):
+                  return "suppress", "", (f"`{name}` is a platform API reporting the DEVICE model "
+                                          "(handset/hardware), not an AI model")
               if not _looks_like_class_symbol(name):
                   return _judge_model_id(comp, rel)
 
